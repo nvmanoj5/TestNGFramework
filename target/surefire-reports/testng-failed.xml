@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Facebook]">
+  <listeners>
+    <listener class-name="MVNSample.MVNFacebook.Listeners"/>
+  </listeners>
+  <test name="Login(failed)" preserve-order="false">
+    <classes>
+      <class name="MVNSample.MVNFacebook.Facebooklogin">
+        <methods>
+          <include name="afcls"/>
+          <include name="bfme"/>
+          <include name="afme"/>
+          <include name="fblogin" invocation-numbers="0 1"/>
+          <include name="bfsu"/>
+          <include name="Afte"/>
+          <include name="bfte"/>
+          <include name="Afsu"/>
+          <include name="bfcls"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

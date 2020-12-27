@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Facebook]">
+  <listeners>
+    <listener class-name="MVNSample.MVNFacebook.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="MVNSample.MVNFacebook.Facebooklogin">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="AfterMethod"/>
+          <include name="fblogin" invocation-numbers="0 1"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeMethod"/>
+          <include name="bfcls"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- MVNSample.MVNFacebook.Facebooklogin -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Facebook] -->
